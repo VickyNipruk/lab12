@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet">
+		<title>Гра "Вгадай число"</title>
+	</head>	
+	<body>
+		<script>
+			"use strict";
+
+			const random_number = Math.floor(Math.random() * 10) + 1;
+			let attempts = 0;
+			let number;
+
+			alert("Гра 'Вгадай число'! Вгадай число від 1 до 10.");
+			
+			while (number !== random_number) {
+
+				number = parseInt(prompt("Введіть число від 1 до 10:"));
+				attempts++;  
+
+				if (number > random_number) {
+					alert("Число менше, спробуйте ще раз.");
+				} else if (number < random_number) {
+					alert("Число більше, спробуйте ще раз.");
+				} else {
+					alert("Вітаємо! Ви вгадали число за " + attempts + " спроб.");
+				}
+			}
+		</script>
+
+        <div class="return">
+            <a href="index.html" class="button">Повернутись на головну</a>
+        </div>
+	</body>
+</html>

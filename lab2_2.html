@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Використання оператора IF</title>
+</head>	
+<body>
+    <script>
+        "use strict";
+    
+        document.write("<p style='text-align:center; margin-top: 30px;'>Знаходження найбільшої вартості товару</p>");
+        
+        let priceApple = prompt("Вартість яблук 16 грн. Введіть вагу:", "");
+        let priceBanana = prompt("Вартість бананів 63 грн. Введіть вагу:", "");
+        let pricePear = prompt("Вартість груші 34 грн. Введіть вагу:", "");
+
+        if ((priceApple < 0) || (priceBanana < 0) || (pricePear < 0)) {
+            document.write("<p>Вага товару не може бути від'ємною. Введіть, будь ласка, коректні значення</p>");
+        } else {
+
+            let a = priceApple * 16;
+            let b = priceBanana * 63;
+            let c = pricePear * 34;
+
+            if (a > b && a > c) {
+                document.write("Найбільша вартість яблук = ", a, " грн");
+            } else if (b > c) {
+                document.write("Найбільша вартість бананів = ", b, " грн");
+            } else {
+                document.write("Найбільша вартість груш = ", c, " грн");
+            }
+        }
+    </script>
+
+    <div class="return">
+        <a href="index.html" class="button">Повернутись на головну</a>
+    </div>
+</body>
+</html>

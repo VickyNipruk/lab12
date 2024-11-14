@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Завдання з циклом FOR</title>
+        <link href="css/style.css" rel="stylesheet">
+	</head>	
+	<body>
+		<script> 
+			"use strict";
+
+            document.write("<h2>1) Використання циклу for</h2>");
+            let n = parseInt(prompt("Введіть число n, щоб знайти суму чисел від 1 до n:"));
+            let sum = 0;
+
+            for (let i = 1; i <= n; i++) {
+                sum += i;
+            }
+            document.write("<h2>Сума всіх чисел від 1 до " + n + " дорівнює " + sum + ".</h2>");
+	
+            document.write("<h2>2) Використання циклу while</h2>");
+            let word = "Дивина";
+            let result = "";
+            let i = 0;  
+
+            while (i < word.length) {
+                result += word[i] + " ";
+                document.write(result + "<br>");
+                i++;
+            }
+
+            document.write("<h2>3) Використання циклу do while</h2>");
+            
+            i = 0; 
+            do { 
+                document.write("Hello " + i + "<br>");
+                i++; 
+            } while (i < 6);
+        </script>
+
+        <div class="return">
+            <a href="index.html" class="button">Повернутись на головну</a>
+        </div>
+	</body>
+</html>

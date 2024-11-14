@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Використання оператора IF</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        let lightColor = prompt("Введіть колір світлофору: 'зелений', 'жовтий' або 'червоний' "); 
+
+        if (lightColor === "зелений") {
+            document.write("<p style='text-align:center'>Можете рухатись</p>");
+        } else if (lightColor === "жовтий") {
+            document.write("<p style='text-align:center'>Приготуйтесь</p>");
+        } else if (lightColor === "червоний") {
+            document.write("<p style='text-align:center'>Стоп! Рух заборонений</p>");
+        } else {
+            document.write("<p style='text-align:center'>Ви ввели невідомий колір світлофору</p>");
+        }
+    </script>
+ 
+    <div class="return">
+        <a href="index.html" class="button">Повернутись на головну</a>
+    </div>
+</body>
+</html>

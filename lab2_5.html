@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet">
+		<title>Використання оператора IF</title>
+	</head>	
+	<body>
+		<script> 
+			"use strict";		
+            let person = {
+                name: "Михайло",
+                surname: "Захвист",
+                age: 28,
+                job: "Програміст",
+                city: "Львів"
+            };
+
+            document.write("<h2>Інформація про працівника:</h2>");
+            for (let property in person) {
+                document.write(property + ": " + person[property] + "<br>");
+            }
+		</script>
+
+        <div class="return">
+            <a href="index.html" class="button">Повернутись на головну</a>
+        </div>
+	</body>
+</html>

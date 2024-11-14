@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet">
+		<title>Використання оператора SWITCH</title>
+	</head>	
+	<body>
+		<script> 
+			"use strict";
+            document.write("<p>Не забувай радіти моментам :)</p>")
+			let number = prompt("Введіть число, яке описує ваш настрій: 0 - поганий, 5 - чудовий","");
+			switch (number) { 
+				case '0':
+                    document.write("<p>Не сумуй, у тебе все вийде!</p>");
+					break;
+				case '1':
+                    document.write("<p>На все свій час. Важливі моменти ще попереду!</p>");
+                    break;
+                case '2':
+                    document.write("<p>Трішки відпочинь і настрій неодмінно покращиться!</p>");
+                    break;
+                case '3':
+                    document.write("<p>Можливо, трохи музики чи прогулянка зроблять день ще кращим!</p>");
+                    break;
+                case '4':
+                    document.write("<p>Продовжуй у тому ж дусі, і день принесе ще більше позитиву!</p>");
+                    break;
+                case '5':
+                    document.write("<p>Фантастичний настрій, так тримати!</p>");
+                    break;
+                default:
+                    document.write("<p>Будь ласка, введіть число від 0 до 5, щоб описати свій настрій.</p>");
+            }
+		</script>
+
+        <div class="return">
+            <a href="index.html" class="button">Повернутись на головну</a>
+        </div>
+	</body>
+</html>
+
